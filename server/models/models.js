@@ -70,7 +70,7 @@ Rating.belongsTo(Device)
 Device.hasMany(BasketDevice)
 BasketDevice.belongsTo(Device)
 
-Device.hasMany(DeviceInfo)
+Device.hasMany(DeviceInfo, { as: 'info' })
 DeviceInfo.belongsTo(Device)
 
 Type.belongsToMany(Brand, { through: TypeBrand })
@@ -81,6 +81,7 @@ module.exports = {
     Basket,
     BasketDevice,
     Device,
+    DeviceInfo,
     BasketDevice,
     Type,
     Brand,
