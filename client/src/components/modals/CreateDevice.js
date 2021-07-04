@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Modal, Button, Form, Dropdown, Row, Col, FormControl } from 'react-bootstrap';
+import { Modal, Button, Form, Dropdown, Row, Col } from 'react-bootstrap';
 import { Context } from '../../index';
 
 const CreateDevice = ({show, onHide}) => {
